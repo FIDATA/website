@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<%= @item[:lang] %>">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8">
+		<meta name="keywords" content="" />
+		<meta name="Author" content="<%= @item[:author] %>" />
+		<% if !@item[:copyright].nil? %><meta name="Copyright" content="<%= @item[:copyright] %>" /><% end %>
+		<meta name="Robots" content="INDEX FOLLOW" />
+		<title><%= @item[:title] %> — <%= @config[:website_name] %></title>
+		<link rel="stylesheet" href="<%= @items['/css/webfonts/'].path %>">
+		<link rel="stylesheet" href="<%= @items['/css/stylesheet/'].path %>">
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="<%= @items['/scripts/tools/'].path %>"></script>
+		<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+		<meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+	</head>
+	<body>
+		<%= render '1HEADER.html' %>
+		<div id="main2">
+			<table cellspacing="6" id="main"><tbody><tr>
+			<%= render '2LEFTER.html' %>
+			<!-- Content of the page -->
+			<td id="body">
+				<%# unless @item.identifier == '/' %>
+					<%#= breadcrumb_for(@item.identifier, collection_class: "navbar-text breadcrumb", separator: content_tag(:span, "&raquo;", :class => "divider")) %>
+				<%# end %>
+				<%#= toc_for(@item ) %><!-- { :path => '*[name()="h2" or name()="h3" or name()="h4"]' }, :collection_class => "nav nav-list toc" -->
+				<%= yield %>
+				<%#= disqus_js_snippet() %>
+				<%#= disqus_nojs_snippet() %>
+			</td>
+			<%= render '3RIGHTER.html' %>
+			</tr></tbody></table>
+		<%= render '4FOOTER.html' %>
+		</div>
+	</body>
+</html>
