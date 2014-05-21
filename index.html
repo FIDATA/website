@@ -12,6 +12,12 @@
 		<meta name="generator" content="nanoc 3.6.11">
 	</head>
 	<body>
-		<script type="text/javascript">window.location.replace(window.location.protocol + '//' + window.location.host + '/en' + window.location.pathname + window.location.hash)</script>
+		<script type="text/javascript">
+			if (navigator.language=='ru') {
+				window.location.replace(window.location.protocol + '//' + window.location.host + '/ru' + window.location.pathname + window.location.hash)
+			} else {
+				window.location.replace(window.location.protocol + '//' + window.location.host + '/en' + window.location.pathname + window.location.hash)
+			}
+		</script>
 	</body>
 </html>
