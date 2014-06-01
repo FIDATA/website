@@ -76,7 +76,7 @@ try:
 	]).decode()
 	print(commitRes, flush = True)
 except CalledProcessError as e:
-	commitRes = e.output
+	commitRes = e.output.decode()
 	print(commitRes, flush = True)
 	if 'nothing to commit, working directory clean' in commitRes:
 		exit(0)
