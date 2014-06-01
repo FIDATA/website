@@ -15,10 +15,6 @@ buildscript {
 		jcenter()
 		maven {
 			url "http://artifactory.fidata.org/plugins-release"
-			credentials {
-				username = artifactory_user
-				password = artifactory_password
-			}
 		}
 	}
 	dependencies {
