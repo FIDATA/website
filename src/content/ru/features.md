@@ -187,7 +187,7 @@ GPU.
 		*	Цели для первого этапа: MetaTrader, QUIK.
 
 		*	Некоторые клиентские библиотеки есть в проекте
-[StockSharp](<%= @items['/en/existing_products/'] %>#StockSharp). Они
+[StockSharp](<%= @items['/en/existing_products/'].path %>#StockSharp). Они
 написаны на C# и распространяются под GPLv3. Мы можем их портировать.
 
 		*	Для терминалов с закрытым исходным кодом нам нужно провести

@@ -86,8 +86,8 @@ very significant. See, for example,
 scientific computing than for Python.
 
 	*	There is ready actively developed project
-[StockSharp](<%= @items['/en/existing_products/'] %>#StockSharp). It is
-written in C# and releases free (not the latest) version) under
+[StockSharp](<%= @items['/en/existing_products/'].path %>#StockSharp).
+It is written in C# and releases free (not the latest) version) under
 GPLv3. It doesn't meet all our
 [requirements](<%= @items["/#{@item[:lang]}/requirements/"].path %>),
 but we can reuse a lot of pieces of code from it.

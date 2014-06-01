@@ -184,8 +184,8 @@ access to trading via various terminals.
 		*	Targets for the first stage: MetaTrader, QUIK.
 
 		*	Some client libraries exist in the project
-[StockSharp](<%= @items['/en/existing_products/'] %>#StockSharp). They
-are written in C# and released under GPLv3. We can port them.
+[StockSharp](<%= @items['/en/existing_products/'].path %>#StockSharp).
+They are written in C# and released under GPLv3. We can port them.
 
 		*	For terminals with closed source we have to do reverse
 engineering and make own open implementation of client.

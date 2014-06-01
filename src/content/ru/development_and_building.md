@@ -87,7 +87,7 @@ copyright: Copyright © 2014  Basil Peace
 меньше, чем под Python.
 
 	*	Существует готовый активно развивающийся проект
-[StockSharp](<%= @items['/en/existing_products/'] %>#StockSharp). Он
+[StockSharp](<%= @items['/en/existing_products/'].path %>#StockSharp). Он
 написан на C# и выпускает бесплатную (не самую последнюю) версию под
 GPLv3. Он не удовлетворяет всем
 [требованиям](<%= @items["/#{@item[:lang]}/requirements/"].path %>), но
