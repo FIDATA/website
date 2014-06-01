@@ -13,7 +13,7 @@
 # to Creative Commons, 444 Castro Street, Suite 900, Mountain View,
 # California, 94041, USA.
 
-from subprocess import check_call, check_output
+from subprocess import check_call, check_output, CalledProcessError
 import sys
 #from os.path import getmtime
 #from datetime import datetime, timedelta
