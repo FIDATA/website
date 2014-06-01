@@ -75,7 +75,8 @@ try:
 		'-m', commitMsg,
 	]).decode()
 	print(commitRes, flush = True)
-except CalledProcessError:
+except CalledProcessError as e:
+	commitRes = e.output
 	print(commitRes, flush = True)
 	if 'nothing to commit, working directory clean' in commitRes:
 		exit(0)
