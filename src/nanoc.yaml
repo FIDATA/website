@@ -61,6 +61,8 @@ prune:
     'LICENSE.txt', 'LICENSE.code.txt', 'LICENSES',
     # Gradle
     '.gradle', 'build.gradle', 'gradle.properties',
+    # Gradle Wrapper
+    'gradle', 'gradlew', 'gradlew.bat',
     # GitHub
     'CNAME', '.nojekyll', 'build.py',
     # Bundle

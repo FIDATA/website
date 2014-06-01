@@ -14,7 +14,7 @@ buildscript {
 	repositories {
 		jcenter()
 		maven {
-			url "$artifactory_contextUrl/plugins-release"
+			url "http://artifactory.fidata.org/plugins-release"
 			credentials {
 				username = artifactory_user
 				password = artifactory_password
@@ -47,16 +47,20 @@ version = '0.1-SNAPSHOT'
 
 
 // Tasks
-
 // def stagingDir = buildDir
 
+configurations {
+	compile
+}
+
+dependencies {
+}
+
 artifactory {
-	contextUrl = artifactory_contextUrl
+	contextUrl = "http://artifactory.fidata.org"
 	resolve {
 		repository {
 			repoKey = 'libs-snapshot'
-			username = artifactory_user
-			password = artifactory_password
 			maven = true
 		}
 	}
@@ -77,4 +81,8 @@ task build {
 
 task all {
 	dependsOn build
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.12'
 }
