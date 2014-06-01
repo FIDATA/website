@@ -68,7 +68,7 @@ task explodeDeps {
 }
 
 task pythonBuild(type: Exec) {
-	commandLine 'python', 'build.py'
+	commandLine 'build.py'
 }
 
 task build {
