@@ -28,6 +28,8 @@ gem 'nanoc-toolbox'
 gem 'uglifier'
 # TODO: Optimization of images
 # gem 'nanoc-image-compressor'
+# For ExecJS
+gem 'therubyracer', :platforms => :ruby
 
 gem 'guard-nanoc'
 # Adapters for using by guard-nanoc instead of polling
