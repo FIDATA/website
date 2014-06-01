@@ -60,9 +60,9 @@ prune:
     # Licenses
     'LICENSE.txt', 'LICENSE.code.txt', 'LICENSES',
     # Gradle
-    'build.gradle', 'gradle.properties',
+    '.gradle', 'build.gradle', 'gradle.properties',
     # GitHub
-    'CNAME', '.nojekyll',
+    'CNAME', '.nojekyll', 'build.py',
     # Bundle
     'Gemfile', 'Gemfile.lock'
   ]

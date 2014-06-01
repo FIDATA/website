@@ -11,7 +11,7 @@ content aren't covered here.
 
 3.	Gemfile — define groups (:production, :test etc.)
 
-4.	Make Gradle script (+ `nanoc check`)
+4.	Add `nanoc check` into Gradle script
 
 	+ Isolate Fonts and Logo into separate artifacts (get rid of `static`
 directory entirely)
