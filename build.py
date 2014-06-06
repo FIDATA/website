@@ -59,7 +59,7 @@ def runRubyExecutable(exec_name, args = [], cwd = None):
 #print('Updating gems...', flush = True)
 #runRubyExecutable('bundle', ['update'])
 
-print('Running nanoc...', flush = True)
+print('Running nanoc...\n', flush = True)
 runRubyExecutable('nanoc', cwd = 'src')
 
 print('\n')
@@ -84,6 +84,8 @@ except CalledProcessError as e:
 		raise
 
 print('Pushing...', flush = True)
-#check_call(['git', 'push'])
+check_call(['git', 'push',
+	'--set-upstream', 'origin', 'master',
+])
 
 print('Done.', flush = True)
