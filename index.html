@@ -10,14 +10,27 @@
 
 		
 		<meta name="generator" content="nanoc 3.6.11">
+		
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	</head>
 	<body>
 		<script type="text/javascript">
-			if (navigator.language=='ru') {
+	$.ajax({ 
+		url: "http://ajaxhttpheaders.appspot.com", 
+		dataType: 'jsonp', 
+		success: function(headers) {
+			language = headers['Accept-Language'];
+			if (language.slice(0,2) === 'ru'){
 				window.location.replace(window.location.protocol + '//' + window.location.host + '/ru' + window.location.pathname + window.location.hash)
-			} else {
+			}
+			else {
 				window.location.replace(window.location.protocol + '//' + window.location.host + '/en' + window.location.pathname + window.location.hash)
 			}
-		</script>
+		}
+		error: function(headers) {
+			window.location.replace(window.location.protocol + '//' + window.location.host + '/en' + window.location.pathname + window.location.hash)
+		}
+	});
+</script>
 	</body>
 </html>
