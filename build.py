@@ -56,8 +56,8 @@ def runRubyExecutable(exec_name, args = [], cwd = None):
 #	need_bundle_update = True
 #
 #if need_bundle_update:
-print('Updating gems...', flush = True)
-runRubyExecutable('bundle', ['update'])
+#print('Updating gems...', flush = True)
+#runRubyExecutable('bundle', ['update'])
 
 print('Running nanoc...', flush = True)
 runRubyExecutable('nanoc', cwd = 'src')
