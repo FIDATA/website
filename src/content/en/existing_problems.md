@@ -16,7 +16,7 @@ Problems of proprietary products
 
 2.	They are black boxes.
 
-3.	Most of products work exclusively under Windows.
+3.	Most of the products work exclusively under Windows.
 
 4.	They have architectural flaws and don't meet those or other
 requirements for good software for trading.
@@ -35,7 +35,7 @@ Problems of open products
 1.	They have architectural flaws and don't meet those or other
 requirements for good software for trading.
 
-2.	Most of products has no quality support. This creates risks for
+2.	Most of the products have no quality support. This creates risks for
 traders.
 
 3.	Many products haven't been updating for a while.

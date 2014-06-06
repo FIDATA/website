@@ -41,7 +41,7 @@ simplify reusage of code.
 
 *	Python 3 works with UTF-8 by default, which takes away all problems
 with code pages.
-*	The most packages have been already ported to Python 3.
+*	Most of the packages have been already ported to Python 3.
 
 ### Considered alternatives
 
