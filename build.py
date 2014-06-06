@@ -84,6 +84,6 @@ except CalledProcessError as e:
 		raise
 
 print('Pushing...', flush = True)
-check_call(['git', 'push'])
+#check_call(['git', 'push'])
 
 print('Done.', flush = True)
