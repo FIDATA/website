@@ -580,14 +580,15 @@ gh-pages branches)
 
 *	**Jenkins installations**:
 
+	*	Ubuntu: <http://jenkins-ubuntu.fidata.org/>
 	*	Windows 7 x64: <http://grv87.ftp.sh:8082/> (temporary)
 	*	Other platforms: TODO
 
 *	**SonarQube**: <http://grv87.ftp.sh:9000/>
 
-*	**Artifactory**: <http://grv87.ftp.sh:8081/>
+*	**Artifactory**: <http://artifactory.fidata.org/>
 
-*	**Modules repository**: TODO
+*	**Modules repository**: <http://modules.fidata.org/> (TODO)
 
 P.S. grv87.ftp.sh is the DDNS address of my home computer. It is
 temporary decision. Please, don't abuse that. Also, although my PC is
