@@ -26,7 +26,7 @@ commitMsg = check_output(['git', 'log',
 print('Testing for tags in commit message...', flush = True)
 delim = commitMsg.find(':')
 commitTags = commitMsg[0:delim].split(',')
-if not ('CODE' in commitTags or 'CONTENT' in commitTags) or 'OUTPUT' in commitTags:
+if not (commitMsg.startswith('Merge pull request') or 'CODE' in commitTags or 'CONTENT' in commitTags) or 'OUTPUT' in commitTags:
 	exit(0)
 
 # This code tries to find and run Ruby exec depending on platform
