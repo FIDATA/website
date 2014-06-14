@@ -60,7 +60,7 @@ prune:
     # Licenses
     'LICENSE.txt', 'LICENSE.code.txt', 'LICENSES',
     # Gradle
-    '.gradle', 'build.gradle', 'gradle.properties',
+    '.gradle', 'build.gradle', 'gradle.properties', 'settings.gradle',
     # Gradle Wrapper
     'gradle', 'gradlew', 'gradlew.bat',
     # GitHub
