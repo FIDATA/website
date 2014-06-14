@@ -67,8 +67,10 @@ defaultTasks 'all'
 task explodeDeps {
 }
 
+ant.condition(property: 'python', value: 'python3', else: 'python') { os(family: "unix") }
+
 task pythonBuild(type: Exec) {
-	commandLine 'python', 'build.py'
+	commandLine ant.properties.python, 'build.py'
 }
 
 task build {
