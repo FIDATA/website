@@ -15,6 +15,7 @@
 
 from subprocess import check_call, check_output, CalledProcessError
 import sys
+from shutil import which
 #from os.path import getmtime
 #from datetime import datetime, timedelta
 
@@ -31,23 +32,10 @@ if not (commitMsg.startswith('Merge pull request') or 'CODE' in commitTags or 'C
 
 # This code tries to find and run Ruby exec depending on platform
 def runRubyExecutable(exec_name, args = [], cwd = None):
-	if sys.platform.startswith('win'):
-		exec_names = [exec_name + '.bat']
-	# TODO: I don't know the proper platform name for MinGW/MSYS
-	#  I make some assumptions
-	elif sys.platform.startswith('cygwin') or sys.platform.startswith('msys') or sys.platform.startswith('mingw'):
-		exec_names = [exec_name + '.bat', exec_name]
-	else:
-		exec_names = [exec_name]
-	i = 0
-	while True:
-		try:
-			check_call([exec_names[i]] + args, cwd = cwd)
-			break
-		except FileNotFoundError:
-			i += 1
-			if i >= len(exec_names): # Nothing was found
-				raise
+	exec_name = which(exec_name)
+	if exec_name is None: # Nothing was found
+		raise FileNotFoundError
+	check_call([exec_name] + args, cwd = cwd)
 
 #bundle_update_threshold = timedelta(days = 1)
 #try:
@@ -62,7 +50,7 @@ def runRubyExecutable(exec_name, args = [], cwd = None):
 print('Running nanoc...\n', flush = True)
 runRubyExecutable('nanoc', cwd = 'src')
 
-print('\n')
+print()
 print('Adding changes to the index...', flush = True)
 check_call(['git', 'add',
 	'-A',
