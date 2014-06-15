@@ -41,6 +41,9 @@ body {
 }
 
 // Standard tags
+div {
+	box-sizing: border-box;
+}
 h1 {
 	font-family: $captionFontFamily;
 	font-weight: bold;
@@ -223,10 +226,13 @@ div#header { // Block of header
 	color: $backgroundColor;
 	height: 150px;
 	background: $blockBackgroundColor;
+	border: 1px solid $blockBackgroundColor; // Fixes block width
+	                                         // for non-CSS3 browser
 	font-size: 12px;
 	// vertical-align: middle;
 	margin: 0px;
 	padding: 0px;
+	width: 100%;
 }
 div#logo { // Block with logo
 	background: $blockBackgroundColor;
@@ -367,11 +373,14 @@ td#body { // Cell with main content
 
 div#footer {
 	background: none repeat scroll 0 0 $blockBackgroundColor;
-	border-top: 1px solid $mainColor;
+	border: 1px solid $mainColor;
+	border-top: none;
+	width: 100%;
+}
+div#footer div {
+	padding: 2px;
 	color: $blockTextColor;
 	font-size: 11px;
-	margin-right: 2px;
-	padding: 2px;
 	text-align: center;
 	width: 100%;
 }
