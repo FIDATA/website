@@ -2,6 +2,7 @@
 title: Главная
 author: Basil Peace
 copyright: Copyright © 2014  Basil Peace
+comments: false
 ---
 
 FIDATA — свободная платформа для анализа финансовых и нефинансовых

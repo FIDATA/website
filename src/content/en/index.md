@@ -2,6 +2,7 @@
 title: Main Page
 author: Basil Peace
 copyright: Copyright © 2014  Basil Peace
+comments: false
 ---
 
 FIDATA is a free platform for analysis of financial and non-financial

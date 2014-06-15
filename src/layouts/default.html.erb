@@ -28,8 +28,15 @@
 				<%# end %>
 				<%#= toc_for(@item ) %><!-- { :path => '*[name()="h2" or name()="h3" or name()="h4"]' }, :collection_class => "nav nav-list toc" -->
 				<%= yield %>
-				<%#= disqus_js_snippet() %>
-				<%#= disqus_nojs_snippet() %>
+				<% if @item[:comments] %>
+					<div id="disqus_thread"></div>
+					<%= disqus_js_snippet({
+						'shortname' => 'fidata',
+						'identifier' => @item[:disqus_identifier],
+						'title' => @item[:title],
+					}) %>
+					<%= disqus_nojs_snippet() %>
+				<% end %>
 			</td>
 			<%= render '3RIGHTER.html' %>
 			</tr></tbody></table>

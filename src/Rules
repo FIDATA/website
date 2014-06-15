@@ -28,6 +28,12 @@
 
 preprocess do
 	preprocess_langs
+	
+	@items.each do |item|
+		item[:comments] = true if item[:comments].nil?
+		item[:disqus_identifier] = item.identifier.chop if item[:disqus_identifier].nil?
+	end
+	
 	generate_menus
 
 	@config[:website_subtitle] = @config[:website_subtitle].stringify_keys_recursively
