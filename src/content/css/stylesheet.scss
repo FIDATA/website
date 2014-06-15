@@ -20,25 +20,24 @@ $blockTextColor: #FFFFFF;
 $errorColor: #FF3300;
 
 * {
- margin: 0px;
- padding: 0px;
- border: none;
- font-size: 13px;
- font-family: $mainFontFamily;
- color: $mainColor;
-// font-stretch: normal;
-// font-style: normal;
-// font-variant: normal;
-// text-decoration: none;
-// text-shadow: none;
-// text-transform: none;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	font-size: 13px;
+	font-family: $mainFontFamily;
+	color: $mainColor;
+	// font-stretch: normal;
+	// font-style: normal;
+	// font-variant: normal;
+	// text-decoration: none;
+	// text-shadow: none;
+	// text-transform: none;
 }
 form {}
 
-body {behavior: url('<%= @items['/assets/scripts/csshover3.htc/'].path %>')}
-
 body {
-  background: $backgroundColor;
+	behavior: url('<%= @items['/assets/scripts/csshover3.htc/'].path %>');
+	background: $backgroundColor;
 }
 
 // Standard tags
@@ -347,13 +346,13 @@ td#body { // Cell with main content
 }
 
 //#main h1 {
-//  line-height: 40px;
+//	line-height: 40px;
 //
-//  letter-spacing: -1px;
+//	letter-spacing: -1px;
 //}
 
 //#main p {
-//  line-height: 20px;
+//	line-height: 20px;
 //}
 #body table {
 	border-collapse: collapse;
@@ -367,16 +366,16 @@ td#body { // Cell with main content
 }
 
 div#footer {
-    background: none repeat scroll 0 0 $blockBackgroundColor;
-    border-top: 1px solid $mainColor;
-    color: $blockTextColor;
-    font-size: 11px;
-    margin-right: 2px;
-    padding: 2px;
-    text-align: center;
-    width: 100%;
+	background: none repeat scroll 0 0 $blockBackgroundColor;
+	border-top: 1px solid $mainColor;
+	color: $blockTextColor;
+	font-size: 11px;
+	margin-right: 2px;
+	padding: 2px;
+	text-align: center;
+	width: 100%;
 }
 div#footer a {
-    color: $blockTextColor;
-    text-decoration: underline;
+	color: $blockTextColor;
+	text-decoration: underline;
 }
