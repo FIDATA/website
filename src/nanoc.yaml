@@ -59,6 +59,8 @@ prune:
     'README.md', 'TODO.txt',
     # Licenses
     'LICENSE.txt', 'LICENSE.code.txt', 'LICENSES',
+	# Eclipse
+	'.project',
     # Gradle
     '.gradle', 'build.gradle', 'gradle.properties', 'settings.gradle',
     # Gradle Wrapper
