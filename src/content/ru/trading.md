@@ -80,8 +80,7 @@ copyright: Copyright © 2014  Basil Peace
 1.	Карл Р. Поппер. *Объективное знание. Эволюционный подход*.
 2.	Нассим Николас Талеб. *Чёрный лебедь. Под знаком непредсказуемости*.
 
-#### <a name="SQC_in_trading"></a>Статистический контроль качества в
-трейдинге
+#### <a name="SQC_in_trading"></a>Статистический контроль качества в трейдинге
 
 1.	Andrew Kumiega, Benjamin Van Vliet. *Quality Money Management*.
 2.	Andrew Kumiega, Ben Van Vliet. A Software Development Methodology
