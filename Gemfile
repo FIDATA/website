@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # Gemfile for FIDATA Website
-# Copyright © 2014  Basil Peace
+# Copyright Â© 2014  Basil Peace
 
 # This file is part of code for generation of FIDATA website.
 
