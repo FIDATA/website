@@ -29,7 +29,7 @@ The most comprehensive list of open source trading platforms:
 
 	Activity: free version isn't .
 
-	Last revision: 2013.
+	Latest revision: 2013.
 
 	Written in: C#.
 
@@ -55,7 +55,7 @@ The most comprehensive list of open source trading platforms:
 
 	Activity: dead.
 
-	Last revision: 2008.
+	Latest revision: 2008.
 
 	Written in: Java.
 
@@ -86,7 +86,7 @@ The most comprehensive list of open source trading platforms:
 
 	Activity: dead.
 
-	Last revision: 2013 / 2008.
+	Latest revision: 2013 / 2008.
 
 	Written in: C++.
 
@@ -144,7 +144,7 @@ The most comprehensive list of open source trading platforms:
 
 	Activity: on and off.
 
-	Last revision: 2013.
+	Latest revision: 2013.
 
 	Written in: Java.
 
@@ -160,7 +160,7 @@ The most comprehensive list of open source trading platforms:
 
 	Activity: no (planning).
 
-	Last revision 2007.
+	Latest revision 2007.
 
 	Written in: Free Pascal.
 
@@ -218,7 +218,7 @@ The most comprehensive list of open source trading platforms:
 
 	Activity: active.
 
-	Last revision: 2014.
+	Latest revision: 2014.
 
 	Written in: Java.
 
@@ -236,7 +236,7 @@ The most comprehensive list of open source trading platforms:
 
 	Activity: active.
 
-	Last revision: 2014.
+	Latest revision: 2014.
 
 	Written in: Java.
 
@@ -252,7 +252,7 @@ The most comprehensive list of open source trading platforms:
 
 	Activity: on and off.
 
-	Last revision: 2014.
+	Latest revision: 2014.
 
 	Written in: Java.
 
@@ -332,7 +332,7 @@ Software for technical analysis
 
 	Activity: dead.
 
-	Last revision: 2013.
+	Latest revision: 2013.
 
 	Written in: Java.
 
@@ -539,7 +539,7 @@ Auxiliary software and scripts
 
 	Activity: dead.
 
-	Last revision: 2010.
+	Latest revision: 2010.
 
 	Написана на Python.
 
@@ -557,7 +557,7 @@ new quotes to the Metastock files.
 
 	Activity: dead.
 
-	Last revision: 2007.
+	Latest revision: 2007.
 
 	Написана на VB.NET.
 
@@ -575,7 +575,7 @@ new quotes to the Metastock files.
 
 	Activity: on and off.
 
-	Last revision: 2014.
+	Latest revision: 2014.
 
 	Written in: Python.
 
@@ -597,7 +597,7 @@ Libraries
 
 	Activity: on and off.
 
-	Last revision: 2013.
+	Latest revision: 2013.
 
 	Written in: C, Java, C++.NET.
 
@@ -613,7 +613,7 @@ Libraries
 
 	Activity: active.
 
-	Last revision: 2014.
+	Latest revision: 2014.
 
 	Written in: Cython.
 
@@ -654,7 +654,7 @@ Libraries
 
 	Repository: <https://github.com/dalejung/csidata.git>.
 
-	Last revision: 2013.
+	Latest revision: 2013.
 
 	Written in: Python.
 
@@ -679,7 +679,7 @@ execution of automated stock trading systems.
 
 	Activity: dead.
 
-	Last revision: 2009.
+	Latest revision: 2009.
 
 	Written in: Python.
 
@@ -709,7 +709,7 @@ execution of automated stock trading systems.
 
 	Activity: active.
 
-	Last revision: 2014.
+	Latest revision: 2014.
 
 *	Ultra-finance
 
@@ -724,7 +724,7 @@ analyzing and backtesting.
 
 	Activity: on and off (development).
 
-	Last revision: 2013.
+	Latest revision: 2013.
 
 	Written in: Python.
 
@@ -753,7 +753,7 @@ Special-purpose libraries
 
 	Activity: unmantained.
 
-	Last revision: 2013.
+	Latest revision: 2013.
 
 	Written in: Python.
 
