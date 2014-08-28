@@ -167,7 +167,7 @@ div.center, img.center {
 table.smallFont, table.smallFont th, table.smallFont td {
 	font-size: 10px;
 }
-a, a:link, a:visited {
+a:link, a:visited {
 	font-size: inherit;
 	font-size: expression(this.parentNode.currentStyle['fontSize']);
 	color: $accent2Color;
@@ -288,7 +288,7 @@ div#print { // Print a page
 	position: relative;
 	margin-right: 12px
 }
-div#topLine, div#topLine a, div#topLine a:link, div#topLine a:visited, div#print, div#print a, div#print a:link, div#print a:visited { // Текст и ссылки в заголовке
+div#topLine, div#topLine a:link, div#topLine a:visited, div#print, div#print a:link, div#print a:visited { // Текст и ссылки в заголовке
 	color: $blockTextColor;
 	text-decoration: none;
 }
@@ -332,7 +332,7 @@ div.menuItem {
 	margin-left: 10px;
 	text-indent: -10px;
 }
-div.menuItem a, div.menuItem a:link, div.menuItem a:visited {
+div.menuItem a:link, div.menuItem a:visited {
 	color: $accent1Color;
 }
 div.menuItem span {
