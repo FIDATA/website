@@ -51,11 +51,7 @@ end
 # end
 
 compile '*' do
-	if item[:extension] == 'css'
-		filter :erb
-		filter :sass, :syntax => :scss, :style => :compressed
-		filter :relativize_paths, :type => :css
-	elsif item[:extension] == 'scss'
+	if ['css', 'scss'].include?(item[:extension])
 		filter :erb
 		filter :sass, :syntax => :scss, :style => :compressed
 		filter :relativize_paths, :type => :css
@@ -65,9 +61,9 @@ compile '*' do
 		filter :erb
 		filter :kramdown, :parse_block_html => true
 		# TODO filter :add_sections
-		begin
+		unless item[:layout].nil?
 			layout item[:layout]
-		rescue
+		else
 			layout 'default.html'
 		end
 		filter :relativize_paths, :type => :html
@@ -79,9 +75,9 @@ compile '*' do
 	else
 		filter :erb
 		filter :add_sections
-		begin
+		unless item[:layout].nil?
 			layout item[:layout]
-		rescue
+		else
 			layout 'default.html'
 		end
 		filter :relativize_paths, :type => :html
@@ -101,13 +97,7 @@ route '*' do
 	if ['css', 'scss'].include?(item[:extension])
 		# Write item with identifier /foo/ to /foo.css
 		"#{item.identifier.chop}.css"
-	elsif item[:extension] == 'htc'
-		# Write item with identifier /foo/ to /foo.htc
-		"#{item.identifier.chop}.htc"
-	elsif item[:extension] == 'js'
-		# Write item with identifier /foo/ to /foo.js
-		"#{item.identifier.chop}.js"
-	elsif item.binary?
+	elsif ['js', 'htc'].include?(item[:extension]) or item.binary?
 		# Write item with identifier /foo/ to /foo.ext
 		"#{item.identifier.chop}.#{item[:extension]}"
 	elsif item[:extension] == 'menu'
