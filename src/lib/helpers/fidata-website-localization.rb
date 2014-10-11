@@ -86,12 +86,7 @@ end
 
 def preprocess_langs
 	@items.each do |item|
-		if item[:lang].nil?
-			begin
-				item[:lang] = (item.identifier.match(%r{^/(..)/}) || [])[1]
-			rescue
-			end
-		end
+		item[:lang] ||= (item.identifier.match(%r{^/(..)/}) || [])[1]
 		item[:canonical_identifier] = (item.identifier.match(%r{^(?:/..)?(/.*)$}) || [])[1]
 	end
 end

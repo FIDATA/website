@@ -27,16 +27,16 @@
 #   because “*” matches zero or more characters.
 
 preprocess do
-	preprocess_langs
-	
 	@items.each do |item|
 		item[:comments] = true if item[:comments].nil?
-		item[:disqus_identifier] = item.identifier.chop if item[:disqus_identifier].nil?
+		item[:disqus_identifier] ||= item.identifier.chop
+		item[:layout] ||= 'default.html'
 	end
 	
-	generate_menus
-
+	preprocess_langs
 	@config[:website_subtitle] = @config[:website_subtitle].stringify_keys_recursively
+
+	generate_menus
 end
 
 compile '/assets/*' do
@@ -61,11 +61,7 @@ compile '*' do
 		filter :erb
 		filter :kramdown, :parse_block_html => true
 		# TODO filter :add_sections
-		unless item[:layout].nil?
-			layout item[:layout]
-		else
-			layout 'default.html'
-		end
+		layout item[:layout]
 		filter :relativize_paths, :type => :html
 		filter :html_compress
 	elsif item[:extension] == 'menu'
@@ -75,11 +71,7 @@ compile '*' do
 	else
 		filter :erb
 		filter :add_sections
-		unless item[:layout].nil?
-			layout item[:layout]
-		else
-			layout 'default.html'
-		end
+		layout item[:layout]
 		filter :relativize_paths, :type => :html
 		filter :html_compress
 	end
