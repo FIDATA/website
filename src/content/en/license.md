@@ -32,9 +32,9 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
 Public License for more details.
 
 The copy of the GNU Free Documentation License is placed at
-[<%= @config[:base_url]+@items['/fdl-1.3/'].path %>](<%= @items['/fdl-1.3/'].path %>)
+[<%= URI.join(@config[:base_url], @items['/fdl-1.3/'].path) %>](<%= @items['/fdl-1.3/'].path %>)
 and the copy of the GNU General Public License is placed at
-[<%= @config[:base_url]+@items['/gpl-3.0/'].path %>](<%= @items['/gpl-3.0/'].path %>).
+[<%= URI.join(@config[:base_url], @items['/gpl-3.0/'].path) %>](<%= @items['/gpl-3.0/'].path %>).
 
 ### Design of FIDATA Website
 
