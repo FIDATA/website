@@ -37,6 +37,8 @@ preprocess do
 	@config[:website_subtitle] = @config[:website_subtitle].stringify_keys_recursively
 
 	generate_menus
+
+	generate_GitHub_files '/assets/'
 end
 
 compile '/assets/*' do
@@ -70,7 +72,7 @@ compile '*' do
 		# don’t filter binary items
 	else
 		filter :erb
-		filter :add_sections
+		# TODO filter :add_sections
 		layout item[:layout]
 		filter :relativize_paths, :type => :html
 		filter :html_compress
