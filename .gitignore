@@ -3,8 +3,3 @@
 gradle.properties
 # Bundle
 Gemfile.lock
-# Nanoc
-tmp
-crash.log
-# Sass
-.sass-cache
