@@ -17,25 +17,28 @@ require 'rbconfig'
 
 source 'https://fidata.jfrog.io/fidata/api/gems/gems'
 
-gem 'win32console', :platforms => [:mswin, :mingw, :x64_mingw]
-gem 'nanoc'
-gem 'kramdown'
-gem 'sass'
-gem 'nokogiri'
+gem 'win32console', '~> 1.3', :platforms => [:mswin, :mingw, :x64_mingw, :mri]
+gem 'nanoc', '~> 4.8'
+# Markdown
+gem 'kramdown', '~> 1.15'
+# Stylesheets
+gem 'sass', '~> 3.5'
+# gem 'nokogiri', '~> 1.8'
 # Navigation, Disqus
-gem 'nanoc-toolbox'
-# Minimization of JS
-gem 'uglifier'
-# TODO: Optimization of images
-# gem 'nanoc-image-compressor'
+gem 'nanoc-toolbox', '~> 0.0'
+# JS minimization
+gem 'uglifier', '~> 3.2'
+# Image Optimization
+gem 'nanoc-image-compressor', '~> 0.1'
 # For ExecJS
-gem 'therubyracer', :platforms => :ruby
+# gem 'therubyracer', '~> 0.12', :platforms => :ruby
 
-gem 'guard-nanoc'
+gem 'guard-nanoc', '~> 2.1'
 # Adapters for using by guard-nanoc instead of polling
-# TODO: I couldn't  have made wdm listener work.
+# BLOCKED: I couldn't have made wdm listener work.
 # See:
 # *	https://github.com/guard/listen/issues/149
 # *	https://github.com/Maher4Ever/wdm/issues/14
-gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['host_os'] =~ /mswin|mingw|cygwin/i
-gem 'rb-kqueue', '>= 0.2' if RbConfig::CONFIG['host_os'] =~ /freebsd/i
+# <>
+gem 'wdm', '~> 0.1', :platforms => [:mswin, :mingw, :x64_mingw, :mri] if RbConfig::CONFIG['host_os'] =~ /mswin|mingw|cygwin/i
+gem 'rb-kqueue', '~> 0.2' # if RbConfig::CONFIG['host_os'] =~ /bsd/i

@@ -15,10 +15,12 @@ GEM
     diff-lcs (1.3)
     equatable (0.6.1)
     execjs (2.7.0)
+    exifr (1.3.6)
     ffi (1.11.1)
     ffi (1.11.1-x64-mingw32)
     ffi (1.11.1-x86-mingw32)
     formatador (0.2.5)
+    fspath (3.1.2)
     guard (2.16.1)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
@@ -35,10 +37,17 @@ GEM
       nanoc (>= 4.3.8, < 5.0)
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
+    image_optim (0.26.5)
+      exifr (~> 1.2, >= 1.2.2)
+      fspath (~> 3.0)
+      image_size (>= 1.5, < 3)
+      in_threads (~> 1.3)
+      progress (~> 3.0, >= 3.0.1)
+    image_size (2.0.2)
+    in_threads (1.5.3)
     jsmin (1.0.1)
     json_schema (0.20.8)
-    kramdown (2.1.0)
-    libv8 (3.16.14.19)
+    kramdown (1.17.0)
     listen (3.2.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -68,6 +77,9 @@ GEM
       tomlrb (~> 1.2)
       tty-platform (~> 0.2)
       zeitwerk (~> 2.1)
+    nanoc-image-compressor (0.1.1)
+      image_optim
+      nanoc (>= 3.3.1)
     nanoc-toolbox (0.0.7)
       jsmin (>= 1.0.1)
       nanoc (>= 3.1.6)
@@ -86,6 +98,7 @@ GEM
     pastel (0.7.3)
       equatable (~> 0.6)
       tty-color (~> 0.5)
+    progress (3.5.2)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -93,6 +106,8 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    rb-kqueue (0.2.5)
+      ffi (>= 0.5.0)
     ref (2.0.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -101,9 +116,6 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     shellany (0.0.1)
     slow_enumerator_tools (1.1.0)
-    therubyracer (0.12.3)
-      libv8 (~> 3.16.14.15)
-      ref
     thor (0.20.3)
     tomlrb (1.2.8)
     tty-color (0.5.0)
@@ -111,7 +123,7 @@ GEM
       pastel (~> 0.7.0)
     tty-platform (0.2.1)
     tty-which (0.4.1)
-    uglifier (4.2.0)
+    uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
     wdm (0.1.1)
     win32console (1.3.2)
@@ -124,16 +136,16 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  guard-nanoc
-  kramdown
-  nanoc
-  nanoc-toolbox
-  nokogiri
-  sass
-  therubyracer
-  uglifier
-  wdm (>= 0.1.0)
-  win32console
+  guard-nanoc (~> 2.1)
+  kramdown (~> 1.15)
+  nanoc (~> 4.8)
+  nanoc-image-compressor (~> 0.1)
+  nanoc-toolbox (~> 0.0)
+  rb-kqueue (~> 0.2)
+  sass (~> 3.5)
+  uglifier (~> 3.2)
+  wdm (~> 0.1)
+  win32console (~> 1.3)
 
 BUNDLED WITH
    1.16.1
