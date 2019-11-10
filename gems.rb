@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # Gemfile for FIDATA Website
-# Copyright © 2014  Basil Peace
+# Copyright © 2014, 2017  Basil Peace
 
 # This file is part of code for generation of FIDATA website.
 
@@ -15,7 +15,7 @@
 
 require 'rbconfig'
 
-source "https://rubygems.org"
+source 'https://fidata.jfrog.io/fidata/api/gems/gems'
 
 gem 'win32console', :platforms => [:mswin, :mingw, :x64_mingw]
 gem 'nanoc'
