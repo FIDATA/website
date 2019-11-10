@@ -17,7 +17,7 @@ require 'rbconfig'
 
 source "https://rubygems.org"
 
-gem 'win32console', :platforms => [:mswin, :mingw]
+gem 'win32console', :platforms => [:mswin, :mingw, :x64_mingw]
 gem 'nanoc'
 gem 'kramdown'
 gem 'sass'
