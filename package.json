@@ -1,0 +1,19 @@
+{
+	"name": "website",
+	"version": "1.0.0",
+	"description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FIDATA/test.git"
+  },
+  "author": "Basil Peace",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/FIDATA/test/issues"
+  },
+  "homepage": "https://github.com/FIDATA/test#readme",
+	"dependencies": {
+		"coffeescript": "~> 2"
+	},
+	"private": true
+}
