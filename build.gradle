@@ -35,6 +35,9 @@ version = '0.1-SNAPSHOT'
 // buildInfo.build.name = ''
 // buildInfo.build.number = ''
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.2'
+}
 
 // Sources
 // sourceSets {
@@ -79,8 +82,4 @@ task build {
 
 task all {
 	dependsOn build
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '1.12'
 }
