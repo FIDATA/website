@@ -31,7 +31,7 @@ Python.
 *	Actively evolving as the language for scientific computing.
 *	There are a lot of off-the-shelf modules for financial and
 scientific computing that can be reused. The official repository:
-<https://pypi.python.org/>.
+[https://pypi.python.org/](https://pypi.python.org/)(:target="_blank").
 *	I studies this issue thoroughly and I'm sure that all stuff required
 by us can be implemented in Python with some degree of С/С++.
 *	Procedural language PL/Python is embedded in PostgreSQL. This can
@@ -54,16 +54,17 @@ I also considered the following languages as primary:
 	*	Closeness of original implementation and the risk of patent
 pursuit of other implementations
 
-		See details at <http://www.fsf.org/news/dont-depend-on-mono>.
+		See details at
+[http://www.fsf.org/news/dont-depend-on-mono](http://www.fsf.org/news/dont-depend-on-mono)(:target="_blank").
 
 	*	Risks of portability
 
 		Although there are projects
-[Portable.NET](http://www.gnu.org/software/dotgnu/pnet.html) and
-[Mono](http://www.mono-project.com/), there are no warranties that they
+[Portable.NET](http://www.gnu.org/software/dotgnu/pnet.html)(:target="_blank") and
+[Mono](http://www.mono-project.com/)(:target="_blank"), there are no warranties that they
 support all required features and 100%-compatible with the original
 implementation. For example,
-[WPF in Mono is not implemented and won't be](http://www.mono-project.com/WPF).
+[WPF in Mono is not implemented and won't be](http://www.mono-project.com/WPF)(:target="_blank").
 Since .NET is not free platform there is no warranties that these
 projects will be developed in the future.
 
@@ -76,11 +77,11 @@ doesn't save us from the problem #1.
 implementation of some algorithm in C# will always lose to
 implementation of the same algorithm in C/C++. Loss, however, is not
 very significant. See, for example,
-<http://www.codeproject.com/Articles/212856/Head-to-head-benchmark-Csharp-vs-NET>.
+[http://www.codeproject.com/Articles/212856/Head-to-head-benchmark-Csharp-vs-NET](http://www.codeproject.com/Articles/212856/Head-to-head-benchmark-Csharp-vs-NET)(:target="_blank").
 
 	**Advantages**:
 
-	*	Off-the-shelf packages: <http://www.nuget.org/>.
+	*	Off-the-shelf packages: [http://www.nuget.org/](http://www.nuget.org/)(:target="_blank").
 
 		By my feeling there are less libraries for financial and
 scientific computing than for Python.
@@ -110,7 +111,7 @@ need .NET platform.
 written in Java
 	*	Speed of development, availability of ready high-level
 abstractions for a lot of operations. For example,
-[GMP](http://www.eclipse.org/modeling/gmp/) — for creation of graphical
+[GMP](http://www.eclipse.org/modeling/gmp/)(:target="_blank") — for creation of graphical
 editors.
 
 	**Disadvantages** (I judge from the point of view of Windows user.
@@ -191,7 +192,7 @@ that can also be projects in other languages.
 
 	*	Actively used in scientific community
 	*	Official repository of packages:
-<http://cran.r-project.org/>.
+[http://cran.r-project.org/](http://cran.r-project.org/)(:target="_blank").
 
 	**Differences from Python**:
 
@@ -209,16 +210,16 @@ beats R
 
 	**Advantages**:
 
-	*	Official repository of packages: <http://www.cpan.org/>. There
+	*	Official repository of packages: [http://www.cpan.org/](http://cran.r-project.org/)(:target="_blank"). There
 is some number of modules for financial computations.
 
 	**Disadvantages**:
 
 	*	There is no ready free native implementation for Windows
-		*	[In December 2013 ActiveState made ActivePerl non-free](http://adpgtech.blogspot.ru/2013/12/activestate-make-activeperl-non-free.html).
+		*	[In December 2013 ActiveState made ActivePerl non-free](http://adpgtech.blogspot.ru/2013/12/activestate-make-activeperl-non-free.html)(:target="_blank").
 		*	Strawberry Perl is being built with GCC
 		*	It is possible to
-[build by ourselves](http://habrahabr.ru/post/78034/)
+[build by ourselves](http://habrahabr.ru/post/78034/)(:target="_blank")
 
 **Decisions for listed languages**:
 
@@ -245,102 +246,102 @@ for first acquaintance and is not exhaustive.
 
 	More comprehensive lists:
 
-	*	<https://wiki.python.org/moin/IntegratingPythonWithOtherLanguages>
-	*	<http://web.archive.org/web/20071108024137/http://www.thinkware.se/cgi-bin/thinki.cgi/UsingPythonWithOtherLanguages>
+	*	[https://wiki.python.org/moin/IntegratingPythonWithOtherLanguages](https://wiki.python.org/moin/IntegratingPythonWithOtherLanguages)(:target="_blank")
+	*	[http://web.archive.org/web/20071108024137/http://www.thinkware.se/cgi-bin/thinki.cgi/UsingPythonWithOtherLanguages](http://web.archive.org/web/20071108024137/http://www.thinkware.se/cgi-bin/thinki.cgi/UsingPythonWithOtherLanguages)(:target="_blank")
 
 	*	<a name="PythonCompilers"></a>compilers
 
-		*	[Cython](http://cython.org/)
-		*	<a name="PyPy"></a>[PyPy](http://pypy.org/) — alternative
+		*	[Cython](http://cython.org/)(:target="_blank")
+		*	<a name="PyPy"></a>[PyPy](http://pypy.org/)(:target="_blank") — alternative
 implementation of the Python language (2.7 and 3.2) with JIT compiler
-		*	[Psyco](http://psyco.sourceforge.net/) — now unmaintained
+		*	[Psyco](http://psyco.sourceforge.net/)(:target="_blank") — now unmaintained
 and dead. Offers to look at [PyPy](#PyPy)
 		*	[Pymothoa](http://code.google.com/p/pymothoa/) — inactive
 because author have joined forces with the [Numba](#Numba) team
-		*	<a name="Numba"></a>[Numba](https://github.com/numba/numba)
+		*	<a name="Numba"></a>[Numba](https://github.com/numba/numba)(:target="_blank")
 — NumPy-aware dynamic Python compiler using [LLVM](#LLVM)
-		*	Py2C: [1](https://code.google.com/p/py2c/),
-[2](https://github.com/pradyun/Py2C) — Python to pure C/C++ translator
+		*	Py2C: [1](https://code.google.com/p/py2c/)(:target="_blank"),
+[2](https://github.com/pradyun/Py2C)(:target="_blank") — Python to pure C/C++ translator
 (converter)
 
 		It it still in development and, unfortunately,
-[won't deal with external modules in near future](https://groups.google.com/forum/#!topic/py2c-discussion/5YOy4m7T-ks).
+[won't deal with external modules in near future](https://groups.google.com/forum/#!topic/py2c-discussion/5YOy4m7T-ks)(:target="_blank").
 	*	[LLVM](#LLVM)
 
-		*	llvmpy: [1](http://www.llvmpy.org/),
-[2](https://github.com/llvmpy/llvmpy) — Python bindings for
+		*	llvmpy: [1](http://www.llvmpy.org/)(:target="_blank"),
+[2](https://github.com/llvmpy/llvmpy)(:target="_blank") — Python bindings for
 [LLVM](#LLVM). Fork/update of [llvm-py](#llvm-py)
 		*	<a name="llvm-py"></a>
-[Llvm-py](http://www.mdevan.org/llvm-py/) — Python bindings for
+[Llvm-py](http://www.mdevan.org/llvm-py/)(:target="_blank") — Python bindings for
 [LLVM](#LLVM). Inactive
 
 	*	C
 
-		*	[CFFI](https://cffi.readthedocs.org/) — Foreign Function
+		*	[CFFI](https://cffi.readthedocs.org/)(:target="_blank") — Foreign Function
 Interface for Python calling C code
 
 	*	R
 
-		*	[RPy](http://rpy.sourceforge.net/)
+		*	[RPy](http://rpy.sourceforge.net/)(:target="_blank")
 
 	*	Java
 
-		*	[JPE](http://jpe.sourceforge.net/) — Java access to Python's
+		*	[JPE](http://jpe.sourceforge.net/)(:target="_blank") — Java access to Python's
 native extension, and Java's Swing to Python developers
-		*	[JPype](http://jpype.sourceforge.net/)
-		*	[PyJava](https://github.com/remram44/pyjava) — C extension
+		*	[JPype](http://jpype.sourceforge.net/)(:target="_blank")
+		*	[PyJava](https://github.com/remram44/pyjava)(:target="_blank") — C extension
 that uses [JNI](#JNI)
-		*	[javabridge](https://pypi.python.org/pypi/javabridge) —
+		*	[javabridge](https://pypi.python.org/pypi/javabridge)(:target="_blank") —
 Python wrapper for the [JNI](#JNI)
 
 	*	.NET
 
-		*	[PythonNet](http://pythonnet.sourceforge.net/)
+		*	[PythonNet](http://pythonnet.sourceforge.net/)(:target="_blank")
 
 	*	Perl
 
-		*	PyPerl: [1](https://wiki.python.org/moin/PyPerl),
-[2](http://en.wikibooks.org/wiki/Python_Programming/Extending_with_Perl)
+		*	PyPerl: [1](https://wiki.python.org/moin/PyPerl)(:target="_blank"),
+[2](http://en.wikibooks.org/wiki/Python_Programming/Extending_with_Perl)(:target="_blank")
 and subsequent links
 
 *	**R**
 
 	*	C++
 
-		*	[Rcpp](http://cran.r-project.org/web/packages/Rcpp/)
+		*	[Rcpp](http://cran.r-project.org/web/packages/Rcpp/)(:target="_blank")
 
 	*	Python
 
-		*	[rPython](http://cran.r-project.org/web/packages/rPython/)
+		*	[rPython](http://cran.r-project.org/web/packages/rPython/)(:target="_blank")
 
 	*	Java
 
-		*	<a name="rJava"></a>[rJava](http://rforge.net/rJava/)
+		*	<a name="rJava"></a>[rJava](http://rforge.net/rJava/)(:target="_blank")
 
 *	**Java**
 
 	*	Python
 
-		*	[Jython](http://www.jython.org/) — Python for the Java
+		*	[Jython](http://www.jython.org/)(:target="_blank") — Python for the Java
 Platform
 			Doesn't support Python 3.
-		*	[JyNI](http://jyni.org/) — Jython Native Interface. Enables
+		*	[JyNI](http://jyni.org/)(:target="_blank") — Jython Native Interface. Enables
 Jython to use native CPython extensions like NumPy or SciPy
-		*	[JPE](http://jpe.sourceforge.net/) — Java access to Python's
+		*	[JPE](http://jpe.sourceforge.net/)(:target="_blank") — Java access to Python's
 native extension, and Java's Swing to Python developers
-		*	[Jepp](http://jepp.sourceforge.net/)
+		*	[Jepp](http://jepp.sourceforge.net/)(:target="_blank")
 
 	*	R
 
-		*	[JRI](http://rforge.net/JRI/), now it's part of
+		*	[JRI](http://rforge.net/JRI/)(:target="_blank"), now it's part of
 [rJava](#rJava)
 
 *	**.NET**
 
 	*	Python
 
-		*	IronPython: [1][http://ironpython.net/],
-[2][https://ironpython.codeplex.com/] — implementation of Python 2.6 for
+		*	IronPython: [1](http://ironpython.net/)(:target="_blank"),
+[2](https://ironpython.codeplex.com/)(:target="_blank") — implementation of Python 2.6 for
 .NET.
 
 			Doesn't support Python 3.
@@ -349,59 +350,59 @@ native extension, and Java's Swing to Python developers
 
 	*	Python
 
-		*	[PL/Python](http://www.postgresql.org/docs/9.3/static/plpython.html)
+		*	[PL/Python](http://www.postgresql.org/docs/9.3/static/plpython.html)(:target="_blank")
 (included)
-		*	[pg-python (aka PL/Py)](http://python.projects.pgfoundry.org/backend/)
+		*	[pg-python (aka PL/Py)](http://python.projects.pgfoundry.org/backend/)(:target="_blank")
 
 	*	Perl
 
-		*	[PL/Perl](http://www.postgresql.org/docs/9.3/static/plperl.html)
+		*	[PL/Perl](http://www.postgresql.org/docs/9.3/static/plperl.html)(:target="_blank")
 (included)
 
 	*	TCL
 
-		*	[PL/TCL](http://www.postgresql.org/docs/9.3/static/pltcl.html)
+		*	[PL/TCL](http://www.postgresql.org/docs/9.3/static/pltcl.html)(:target="_blank")
 (included)
 
 	*	R
 
-		*	[PL/R](http://www.joeconway.com/plr/)
+		*	[PL/R](http://www.joeconway.com/plr/)(:target="_blank")
 
 	*	Java
 
-		*	[PL/Java](http://pljava.projects.pgfoundry.org/)
+		*	[PL/Java](http://pljava.projects.pgfoundry.org/)(:target="_blank")
 
 	*	Ruby
 
-		*	PL/Ruby: [1][http://rubyforge.org/projects/plruby/],
-[2][https://github.com/knu/postgresql-plruby]
+		*	PL/Ruby: [1](http://rubyforge.org/projects/plruby/)(:target="_blank"),
+[2](https://github.com/knu/postgresql-plruby)(:target="_blank")
 
 	*	PHP
 
-		*	[PL/PHP](http://www.commandprompt.com/community/plphp/)
+		*	[PL/PHP](http://www.commandprompt.com/community/plphp/)(:target="_blank")
 
 	*	sh
-		*	[PL/sh](https://github.com/petere/plsh)
+		*	[PL/sh](https://github.com/petere/plsh)(:target="_blank")
 
 *	**Perl**
 
-	*	The Perl Compiler: [1][http://www.perl-compiler.org/],
-[2][https://code.google.com/p/perl-compiler/] — compiles to C or
+	*	The Perl Compiler: [1](http://www.perl-compiler.org/)(:target="_blank"),
+[2](https://code.google.com/p/perl-compiler/)(:target="_blank") — compiles to C or
 platform-compatible Bytecode
 
 	*	Python
 
-		*	[Inline::Python](http://search.cpan.org/dist/Inline-Python/)
+		*	[Inline::Python](http://search.cpan.org/dist/Inline-Python/)(:target="_blank")
 
 *	**Lua**
 
 	*	C
 
-		*	[LuaJIT’s FFI](http://luajit.org/ext_ffi.html) — allows
+		*	[LuaJIT’s FFI](http://luajit.org/ext_ffi.html)(:target="_blank") — allows
 calling external C functions and using C data structures from pure Lua
 code
 
-*	[**SWIG**](http://www.swig.org/) — connects programs written in C and
+*	[**SWIG**](http://www.swig.org/)(:target="_blank") — connects programs written in C and
 C++ with variety of high-level programming languages
 
 	Supported languages: Tcl, Python, Perl, Java (incl. Android), Ruby,
@@ -410,13 +411,13 @@ Go, D and others.
 
 	Is known for its slowness.
 
-*	<a name="LLVM"></a>[**LLVM**](http://llvm.org/) — a collection of
+*	<a name="LLVM"></a>[**LLVM**](http://llvm.org/)(:target="_blank") — a collection of
 modular and reusable compiler and toolchain technologies.
 
 *	<a name="JNI"></a>
-[**Java Native Interface (JNI)**](http://en.wikipedia.org/wiki/Java_Native_Interface)
+[**Java Native Interface (JNI)**](http://en.wikipedia.org/wiki/Java_Native_Interface)(:target="_blank")
 
-*	[**Python Native Interface**](http://jpype.sourceforge.net/pni.html)
+*	[**Python Native Interface**](http://jpype.sourceforge.net/pni.html)(:target="_blank")
 (project)
 
 
@@ -425,7 +426,7 @@ Source code
 
 *	**Version control system**: Git
 
-*	**Hosting of source code**: [GitHub](https://github.com/)
+*	**Hosting of source code**: [GitHub](https://github.com/)(:target="_blank")
 
 	FIDATA organization on GitHub: <https://github.com/FIDATA/>
 
@@ -477,11 +478,11 @@ Build system
 
 ![Build system](<%= @items["/#{@item[:lang]}/images/build_system/"].path %>)
 
-1.	**Continuous integration server**: Jenkins
+1.	**Continuous integration server**: [Jenkins](http://jenkins-ci.org/)(:target="_blank")
 
-2.	**Main build system**: Maven or Gradle
-
-	All other tasks are run from this one.
+2.	**Main build system**: [Maven](http://maven.apache.org/)(:target="_blank")
+or [Gradle](http://www.gradle.org/)(:target="_blank"). All other tasks
+are run from this one.
 
 	Firstly I planned Maven. However, some modules I've already started
 under Gradle.
@@ -500,7 +501,7 @@ under Gradle.
 		Since the platform itself
 [should have feature for code compilation](<%= @items["/#{@item[:lang]}/architecture/"].path %>#problem_compilation),
 it is worth to consider other compilers. I look at
-[clang](http://clang.llvm.org/). It is cross-platform compiler,
+[clang](http://clang.llvm.org/)(:target="_blank"). It is cross-platform compiler,
 compatible with GCC and comparable with it by speed. clang is also
 binary compatible with MSVC 2012 (11.0). It is a part of the project
 [LLVM](#LLVM), which also has interfaces for Python.
@@ -510,25 +511,25 @@ binary compatible with MSVC 2012 (11.0). It is a part of the project
 	*	Python: TODO
 	*	TeX — LuaLaTex + Latexmk
 	*	Conversion between formats:
-[pandoc](http://johnmacfarlane.net/pandoc/)
+[pandoc](http://johnmacfarlane.net/pandoc/)(:target="_blank")
 
 5.	**Unit testing**:
 
 	*	Python: TODO
 	*	C/C++: TODO
 	*	PostgreSQL:
-		*	[Epic](http://epictest.org/)
+		*	[Epic](http://epictest.org/)(:target="_blank")
 
 6.	**Inspection of code quality**:
 
-	*	SonarQube
+	*	[SonarQube](http://www.sonarqube.org/)(:target="_blank")
 	*	Tests for compliance to PEP 8
-	*	[Clang Static Analyzer](http://clang-analyzer.llvm.org/)
+	*	[Clang Static Analyzer](http://clang-analyzer.llvm.org/)(:target="_blank")
 
 7.	**Binary artifacts repository**: Artifactory
 
 8.	**Production of modules**:
-[Qt Installer Framework](http://qt-project.org/wiki/Qt-Installer-Framework)
+[Qt Installer Framework](http://qt-project.org/wiki/Qt-Installer-Framework)(:target="_blank")
 
 9.	**Modules repository**: file hosting with http, ftp, sshd
 
@@ -543,7 +544,7 @@ I prefer:
 	In [this repository](https://github.com/FIDATA/dev-toolkit) there
 are links to custom configuration of Eclipse and additional plugins.
 
-*	[Eric](http://eric-ide.python-projects.org/) — for Python + Qt
+*	[Eric](http://eric-ide.python-projects.org/)(:target="_blank") — for Python + Qt
 
 
 Formats of documentation
@@ -593,7 +594,7 @@ gh-pages branches)
 P.S. grv87.ftp.sh is the DDNS address of my home computer. It is
 temporary decision. Please, don't abuse that. Also, although my PC is
 usually switched-on 24/7, it is not
-[highly available](http://en.wikipedia.org/wiki/High_availability). I
+[highly available](http://en.wikipedia.org/wiki/High_availability)(:target="_blank"). I
 can have maintenance hours and power and network outages.
 
 
@@ -601,7 +602,7 @@ Additional reading
 ------------------
 
 ### Modular software
-*	<http://qconlondon.com/dl/qcon-london-2013/slides/BaruchSadogursky_ManagingModularSoftwareForYourNuGetCAndJavaDevelopment.pdf>
+*	[http://qconlondon.com/dl/qcon-london-2013/slides/BaruchSadogursky_ManagingModularSoftwareForYourNuGetCAndJavaDevelopment.pdf](http://qconlondon.com/dl/qcon-london-2013/slides/BaruchSadogursky_ManagingModularSoftwareForYourNuGetCAndJavaDevelopment.pdf)(:target="_blank")
 
 ### Comparison of binary artifacts repositories
-*	<http://docs.codehaus.org/display/MAVENUSER/Maven+Repository+Manager+Feature+Matrix>
+*	[http://docs.codehaus.org/display/MAVENUSER/Maven+Repository+Manager+Feature+Matrix](http://docs.codehaus.org/display/MAVENUSER/Maven+Repository+Manager+Feature+Matrix)(:target="_blank")

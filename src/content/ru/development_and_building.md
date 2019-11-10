@@ -30,7 +30,8 @@ copyright: Copyright © 2014  Basil Peace
 *	Активно развивается как язык для научных вычислений.
 *	Существует большое количество готовых модулей для финансовых и
 научных вычислений, которые можно переиспользовать. Официальный
-репозиторий: <https://pypi.python.org/>.
+репозиторий:
+[https://pypi.python.org/](https://pypi.python.org/)(:target="_blank").
 *	Я изучал вопрос подробно и уверен, что все необходимые нам вещи
 возможно реализовать на Python с некоторой долей С/С++.
 *	Процедурный язык PL/Python встроен в PostgreSQL. Это может упростить
@@ -54,16 +55,17 @@ copyright: Copyright © 2014  Basil Peace
 	*	Закрытость оригинальной реализации и риск патентного
 преследования других реализаций
 
-		См. подробнее <http://www.fsf.org/news/dont-depend-on-mono>.
+		См. подробнее
+[http://www.fsf.org/news/dont-depend-on-mono](http://www.fsf.org/news/dont-depend-on-mono)(:target="_blank").
 
 	*	Риски портируемости
 
 		Хотя существуют проекты
-[Portable.NET](http://www.gnu.org/software/dotgnu/pnet.html) и
-[Mono](http://www.mono-project.com/), нет никаких гарантий, что они
+[Portable.NET](http://www.gnu.org/software/dotgnu/pnet.html)(:target="_blank") и
+[Mono](http://www.mono-project.com/)(:target="_blank"), нет никаких гарантий, что они
 поддерживают все необходимые возможности и 100%-совместимы с
 оригинальной реализацией. Например,
-[WPF в Mono не реализован и не будет](http://www.mono-project.com/WPF).
+[WPF в Mono не реализован и не будет](http://www.mono-project.com/WPF)(:target="_blank").
 Поскольку .NET не является свободной платформой, гарантий, что эти
 проекты будут развиваться в будущем, так же нет.
 
@@ -77,11 +79,11 @@ copyright: Copyright © 2014  Basil Peace
 реализации того же алгоритма на C/С++. Проигрыш, однако, не очень
 существенен.
 См., например,
-<http://www.codeproject.com/Articles/212856/Head-to-head-benchmark-Csharp-vs-NET>.
+[http://www.codeproject.com/Articles/212856/Head-to-head-benchmark-Csharp-vs-NET](http://www.codeproject.com/Articles/212856/Head-to-head-benchmark-Csharp-vs-NET)(:target="_blank").
 
 	**Преимущества**:
 
-	*	Готовые пакеты: <http://www.nuget.org/>.
+	*	Готовые пакеты: [http://www.nuget.org/](http://www.nuget.org/)(:target="_blank").
 
 		По моему ощущению, библиотек для финансовых и научных вычислений
 меньше, чем под Python.
@@ -111,7 +113,7 @@ GPLv3. Он не удовлетворяет всем
 написанных на Java
 	*	Скорость разработки, доступность высокоуровневых абстракций для
 многих операций. Например,
-[GMP](http://www.eclipse.org/modeling/gmp/) — для создания графических
+[GMP](http://www.eclipse.org/modeling/gmp/)(:target="_blank") — для создания графических
 редакторов
 
 	**Недостатки** (я сужу с точки зрения пользователя Windows. Под
@@ -191,7 +193,7 @@ Python не является единственным языком для фин
 
 	*	Активно используется в научном сообществе
 	*	Официальный репозиторий пакетов:
-<http://cran.r-project.org/>.
+[http://cran.r-project.org/](http://cran.r-project.org/)(:target="_blank").
 
 	**Отличия от Python**:
 
@@ -209,16 +211,16 @@ Python не является единственным языком для фин
 
 	**Преимущества**:
 
-	*	Официальный репозиторий пакетов: <http://www.cpan.org/>. Есть
+	*	Официальный репозиторий пакетов: [http://www.cpan.org/](http://cran.r-project.org/)(:target="_blank"). Есть
 некоторое количество модулей для финансовых вычислений.
 
 	**Недостатки**:
 
 	*	Нет готовой свободной нативной реализации под Windows
-		*	[В декабре 2013 года ActiveState сделала ActivePerl несвободной](http://adpgtech.blogspot.ru/2013/12/activestate-make-activeperl-non-free.html).
+		*	[В декабре 2013 года ActiveState сделала ActivePerl несвободной](http://adpgtech.blogspot.ru/2013/12/activestate-make-activeperl-non-free.html)(:target="_blank").
 		*	Strarberry Perl собирается GCC
 		*	Возможно
-[собрать самостоятельно](http://habrahabr.ru/post/78034/)
+[собрать самостоятельно](http://habrahabr.ru/post/78034/)(:target="_blank")
 
 **Решения для перечисленных языков**:
 
@@ -244,106 +246,106 @@ Python не является единственным языком для фин
 
 	Более полные списки:
 
-	*	<https://wiki.python.org/moin/IntegratingPythonWithOtherLanguages>
-	*	<http://web.archive.org/web/20071108024137/http://www.thinkware.se/cgi-bin/thinki.cgi/UsingPythonWithOtherLanguages>
+	*	[https://wiki.python.org/moin/IntegratingPythonWithOtherLanguages](https://wiki.python.org/moin/IntegratingPythonWithOtherLanguages)(:target="_blank")
+	*	[http://web.archive.org/web/20071108024137/http://www.thinkware.se/cgi-bin/thinki.cgi/UsingPythonWithOtherLanguages](http://web.archive.org/web/20071108024137/http://www.thinkware.se/cgi-bin/thinki.cgi/UsingPythonWithOtherLanguages)(:target="_blank")
 
 	*	<a name="PythonCompilers"></a>компиляторы
 
-		*	[Cython](http://cython.org/)
-		*	<a name="PyPy"></a>[PyPy](http://pypy.org/) — альтернативная
+		*	[Cython](http://cython.org/)(:target="_blank")
+		*	<a name="PyPy"></a>[PyPy](http://pypy.org/)(:target="_blank") — альтернативная
 реализация языка Python (2.7 и 3.2) с динамическим компилятором
-		*	[Psyco](http://psyco.sourceforge.net/) — сейчас не
+		*	[Psyco](http://psyco.sourceforge.net/)(:target="_blank") — сейчас не
 обслуживается и умер. Предлагает взглянуть на [PyPy](#PyPy)
-		*	[Pymothoa](http://code.google.com/p/pymothoa/) — неактивен,
+		*	[Pymothoa](http://code.google.com/p/pymothoa/)(:target="_blank") — неактивен,
 потому что автор объединил свои силы с командой [Numba](#Numba)
-		*	<a name="Numba"></a>[Numba](https://github.com/numba/numba)
+		*	<a name="Numba"></a>[Numba](https://github.com/numba/numba)(:target="_blank")
 — динамический компилятор Python, использующий [LLVM](#LLVM) и
 осведомлённый о NumPy
-		*	Py2C: [1](https://code.google.com/p/py2c/),
-[2](https://github.com/pradyun/Py2C) — транслятор (конвертер) с Python
+		*	Py2C: [1](https://code.google.com/p/py2c/)(:target="_blank"),
+[2](https://github.com/pradyun/Py2C)(:target="_blank") — транслятор (конвертер) с Python
 на чистый C/C++
 
 		Всё ещё в разработке и, к сожалению,
-[не будет справляться с внешними модулями в ближайшем будущем](https://groups.google.com/forum/#!topic/py2c-discussion/5YOy4m7T-ks).
+[не будет справляться с внешними модулями в ближайшем будущем](https://groups.google.com/forum/#!topic/py2c-discussion/5YOy4m7T-ks)(:target="_blank").
 
 	*	[LLVM](#LLVM)
 
-		*	llvmpy: [1](http://www.llvmpy.org/),
-[2](https://github.com/llvmpy/llvmpy) — Python-связка для [LLVM](#LLVM).
+		*	llvmpy: [1](http://www.llvmpy.org/)(:target="_blank"),
+[2](https://github.com/llvmpy/llvmpy)(:target="_blank") — Python-связка для [LLVM](#LLVM).
 Форк/обновление [llvm-py](#llvm-py)
 		*	<a name="llvm-py"></a>
-[Llvm-py](http://www.mdevan.org/llvm-py/) — Python-связка для
+[Llvm-py](http://www.mdevan.org/llvm-py/)(:target="_blank") — Python-связка для
 [LLVM](#LLVM). Неактивна
 
 	*	C
 
-		*	[CFFI](https://cffi.readthedocs.org/) — Foreign Function
+		*	[CFFI](https://cffi.readthedocs.org/)(:target="_blank") — Foreign Function
 Interface для Python, вызывающего код на C
 
 	*	R
 
-		*	[RPy](http://rpy.sourceforge.net/)
+		*	[RPy](http://rpy.sourceforge.net/)(:target="_blank")
 
 	*	Java
 
-		*	[JPE](http://jpe.sourceforge.net/) — доступ из Java к
+		*	[JPE](http://jpe.sourceforge.net/)(:target="_blank") — доступ из Java к
 нативным расширениям Python, и подключение Java для разработчиков на
 Python
-		*	[JPype](http://jpype.sourceforge.net/)
-		*	[PyJava](https://github.com/remram44/pyjava) — расширение на
+		*	[JPype](http://jpype.sourceforge.net/)(:target="_blank")
+		*	[PyJava](https://github.com/remram44/pyjava)(:target="_blank") — расширение на
 C, использующее [JNI](#JNI)
-		*	[javabridge](https://pypi.python.org/pypi/javabridge) —
+		*	[javabridge](https://pypi.python.org/pypi/javabridge)(:target="_blank") —
 обёртка для [JNI](#JNI) на Python
 
 	*	.NET
 
-		*	[PythonNet](http://pythonnet.sourceforge.net/)
+		*	[PythonNet](http://pythonnet.sourceforge.net/)(:target="_blank")
 
 	*	Perl
 
-		*	PyPerl: [1](https://wiki.python.org/moin/PyPerl),
-[2](http://en.wikibooks.org/wiki/Python_Programming/Extending_with_Perl)
+		*	PyPerl: [1](https://wiki.python.org/moin/PyPerl)(:target="_blank"),
+[2](http://en.wikibooks.org/wiki/Python_Programming/Extending_with_Perl)(:target="_blank")
 и последующие ссылки
 
 *	**R**
 
 	*	C++
 
-		*	[Rcpp](http://cran.r-project.org/web/packages/Rcpp/)
+		*	[Rcpp](http://cran.r-project.org/web/packages/Rcpp/)(:target="_blank")
 
 	*	Python
 
-		*	[rPython](http://cran.r-project.org/web/packages/rPython/)
+		*	[rPython](http://cran.r-project.org/web/packages/rPython/)(:target="_blank")
 
 	*	Java
 
-		*	<a name="rJava"></a>[rJava](http://rforge.net/rJava/)
+		*	<a name="rJava"></a>[rJava](http://rforge.net/rJava/)(:target="_blank")
 
 *	**Java**
 
 	*	Python
 
-		*	[Jython](http://www.jython.org/) — Python для платформы Java
+		*	[Jython](http://www.jython.org/)(:target="_blank") — Python для платформы Java
 			Не поддерживает Python 3.
-		*	[JyNI](http://jyni.org/) — Jython Native Interface.
+		*	[JyNI](http://jyni.org/)(:target="_blank") — Jython Native Interface.
 Позволяет Jython использовать нативные расширения CPython, такие как
 NumPy или SciPy
-		*	[JPE](http://jpe.sourceforge.net/) — доступ из Java к
+		*	[JPE](http://jpe.sourceforge.net/)(:target="_blank") — доступ из Java к
 нативным расширениям Python, и подключение Java для разработчиков на
 Python
-		*	[Jepp](http://jepp.sourceforge.net/)
+		*	[Jepp](http://jepp.sourceforge.net/)(:target="_blank")
 
 	*	R
 
-		*	[JRI](http://rforge.net/JRI/), сейчас это часть
+		*	[JRI](http://rforge.net/JRI/)(:target="_blank"), сейчас это часть
 [rJava](#rJava)
 
 *	**.NET**
 
 	*	Python
 
-		*	IronPython: [1][http://ironpython.net/],
-[2][https://ironpython.codeplex.com/] — реализация Python 2.6 для .NET.
+		*	IronPython: [1](http://ironpython.net/)(:target="_blank"),
+[2](https://ironpython.codeplex.com/)(:target="_blank") — реализация Python 2.6 для .NET.
 
 			Не поддерживает Python 3.
 
@@ -351,60 +353,60 @@ Python
 
 	*	Python
 
-		*	[PL/Python](http://www.postgresql.org/docs/9.3/static/plpython.html)
+		*	[PL/Python](http://www.postgresql.org/docs/9.3/static/plpython.html)(:target="_blank")
 (включён)
-		*	[pg-python (aka PL/Py)](http://python.projects.pgfoundry.org/backend/)
+		*	[pg-python (aka PL/Py)](http://python.projects.pgfoundry.org/backend/)(:target="_blank")
 
 	*	Perl
 
-		*	[PL/Perl](http://www.postgresql.org/docs/9.3/static/plperl.html)
+		*	[PL/Perl](http://www.postgresql.org/docs/9.3/static/plperl.html)(:target="_blank")
 (включён)
 
 	*	TCL
 
-		*	[PL/TCL](http://www.postgresql.org/docs/9.3/static/pltcl.html)
+		*	[PL/TCL](http://www.postgresql.org/docs/9.3/static/pltcl.html)(:target="_blank")
 (включён)
 
 	*	R
 
-		*	[PL/R](http://www.joeconway.com/plr/)
+		*	[PL/R](http://www.joeconway.com/plr/)(:target="_blank")
 
 	*	Java
 
-		*	[PL/Java](http://pljava.projects.pgfoundry.org/)
+		*	[PL/Java](http://pljava.projects.pgfoundry.org/)(:target="_blank")
 
 	*	Ruby
 
-		*	PL/Ruby: [1][http://rubyforge.org/projects/plruby/],
-[2][https://github.com/knu/postgresql-plruby]
+		*	PL/Ruby: [1](http://rubyforge.org/projects/plruby/)(:target="_blank"),
+[2](https://github.com/knu/postgresql-plruby)(:target="_blank")
 
 	*	PHP
 
-		*	[PL/PHP](http://www.commandprompt.com/community/plphp/)
+		*	[PL/PHP](http://www.commandprompt.com/community/plphp/)(:target="_blank")
 
 	*	sh
 
-		*	[PL/sh](https://github.com/petere/plsh)
+		*	[PL/sh](https://github.com/petere/plsh)(:target="_blank")
 
 *	**Perl**
 
-	*	The Perl Compiler: [1][http://www.perl-compiler.org/],
-[2][https://code.google.com/p/perl-compiler/] — компилирует в C или
+	*	The Perl Compiler: [1](http://www.perl-compiler.org/)(:target="_blank"),
+[2](https://code.google.com/p/perl-compiler/)(:target="_blank") — компилирует в C или
 платформо-совместимый байткод
 
 	*	Python
 
-		*	[Inline::Python](http://search.cpan.org/dist/Inline-Python/)
+		*	[Inline::Python](http://search.cpan.org/dist/Inline-Python/)(:target="_blank")
 
 *	**Lua**
 
 	*	C
 
-		*	[LuaJIT’s FFI](http://luajit.org/ext_ffi.html) — позволяет
+		*	[LuaJIT’s FFI](http://luajit.org/ext_ffi.html)(:target="_blank") — позволяет
 вызывать внешние функции на C и использовать структуры данных C из
 чистого кода Lua
 
-*	[**SWIG**](http://www.swig.org/) — соединяет программы, написанные на C,
+*	[**SWIG**](http://www.swig.org/)(:target="_blank") — соединяет программы, написанные на C,
 с множеством высокоуровневым языков программирования
 
 	Поддерживаемые языки: Tcl, Python, Perl, Java (incl. Android), Ruby,
@@ -413,13 +415,13 @@ Go, D и др.
 
 	Известна своей медлительностью.
 
-*	<a name="LLVM"></a>[**LLVM**](http://llvm.org/) — коллекция модульных и
+*	<a name="LLVM"></a>[**LLVM**](http://llvm.org/)(:target="_blank") — коллекция модульных и
 переиспользуемых технологий для компиляторов и инструментариев
 
 *	<a name="JNI"></a>
-[**Java Native Interface (JNI)**](http://ru.wikipedia.org/wiki/Java_Native_Interface)
+[**Java Native Interface (JNI)**](http://ru.wikipedia.org/wiki/Java_Native_Interface)(:target="_blank")
 
-*	[**Python Native Interface**](http://jpype.sourceforge.net/pni.html)
+*	[**Python Native Interface**](http://jpype.sourceforge.net/pni.html)(:target="_blank")
 (проект)
 
 
@@ -428,7 +430,7 @@ Go, D и др.
 
 *	**Система управления версиями**: Git
 
-*	**Хостинг исходного кода**: [GitHub](https://github.com/)
+*	**Хостинг исходного кода**: [GitHub](https://github.com/)(:target="_blank")
 
 	Организация FIDATA на GitHub: <https://github.com/FIDATA/>
 
@@ -485,10 +487,10 @@ GitHub. Для них просто делаем форки. Некоторые �
 
 ![Система сборки](<%= @items["/#{@item[:lang]}/images/build_system/"].path %>)
 
-1.	**Сервер непрерывной интеграции**: [Jenkins](http://jenkins-ci.org/)
+1.	**Сервер непрерывной интеграции**: [Jenkins](http://jenkins-ci.org/)(:target="_blank")
 
-2.	**Основная система сборки**: [Maven](http://maven.apache.org/) либо
-[Gradle](http://www.gradle.org/). Все остальные задачи запускаются
+2.	**Основная система сборки**: [Maven](http://maven.apache.org/)(:target="_blank") либо
+[Gradle](http://www.gradle.org/)(:target="_blank"). Все остальные задачи запускаются
 из-под неё.
 
 	Первоначально я планировал Maven. Однако, несколько модулей я уже
@@ -508,7 +510,7 @@ GitHub. Для них просто делаем форки. Некоторые �
 		Так как платформа сама
 [должна иметь возможности для компиляции кода](<%= @items["/#{@item[:lang]}/architecture/"].path %>#problem_compilation),
 стоит рассмотреть и другие компиляторы. Я присматриваюсь к
-[clang](http://clang.llvm.org/). Это кроссплатформенный компилятор,
+[clang](http://clang.llvm.org/)(:target="_blank"). Это кроссплатформенный компилятор,
 совместимый с GCC и сравнимый с ним по скорости. clang также бинарно
 совместим с MSVC 2012 (11.0). Он является частью проекта [LLVM](#LLVM),
 который так же имеет интерфейсы и для Pythonа.
@@ -518,26 +520,26 @@ GitHub. Для них просто делаем форки. Некоторые �
 	*	Python: TODO
 	*	TeX: LuaLaTex + Latexmk
 	*	Конвертация между форматами:
-[pandoc](http://johnmacfarlane.net/pandoc/)
+[pandoc](http://johnmacfarlane.net/pandoc/)(:target="_blank")
 
 5.	**Unit testing**:
 
 	*	Python: TODO
 	*	C/C++: TODO
 	*	PostgreSQL:
-		*	[Epic](http://epictest.org/)
+		*	[Epic](http://epictest.org/)(:target="_blank")
 
 6.	**Проверка качества кода**:
 
-	*	[SonarQube](http://www.sonarqube.org/)
+	*	[SonarQube](http://www.sonarqube.org/)(:target="_blank")
 	*	Тесты на соответствие PEP 8
-	*	[Clang Static Analyzer](http://clang-analyzer.llvm.org/)
+	*	[Clang Static Analyzer](http://clang-analyzer.llvm.org/)(:target="_blank")
 
 7.	**Хранилище бинарных артефактов**:
-[Artifactory](http://www.jfrog.com/home/v_artifactory_opensource_overview)
+[Artifactory](http://www.jfrog.com/home/v_artifactory_opensource_overview)(:target="_blank")
 
 8.	**Создание модулей**:
-[Qt Installer Framework](http://qt-project.org/wiki/Qt-Installer-Framework)
+[Qt Installer Framework](http://qt-project.org/wiki/Qt-Installer-Framework)(:target="_blank")
 
 9.	**Хранилище модулей**: файловый хостинг с http, ftp, sshd
 
@@ -553,7 +555,7 @@ GitHub. Для них просто делаем форки. Некоторые �
 ссылки на кастомизированную конфигурацию Eclipse и дополнительные
 плагины.
 
-*	[Eric](http://eric-ide.python-projects.org/) — для Python + Qt
+*	[Eric](http://eric-ide.python-projects.org/)(:target="_blank") — для Python + Qt
 
 
 Форматы документации
@@ -604,7 +606,7 @@ GitHub. Для них просто делаем форки. Некоторые �
 P.S. grv87.ftp.sh — DDNS-адрес моего домашнего компьютера. Это временное
 решение. Пожалуйста, не злоупотребляйте этим. Также, хотя мой ПК обычно
 включён 24/7, он не
-[высоко доступен](http://ru.wikipedia.org/wiki/%D0%92%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D1%8C).
+[высоко доступен](http://ru.wikipedia.org/wiki/%D0%92%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D1%8C)(:target="_blank").
 У меня могут быть часы обслуживания и перебои в подаче электроэнергии и
 работе сети.
 
@@ -613,7 +615,7 @@ P.S. grv87.ftp.sh — DDNS-адрес моего домашнего компью
 ---------------------
 
 ### Модульное ПО
-*	<http://qconlondon.com/dl/qcon-london-2013/slides/BaruchSadogursky_ManagingModularSoftwareForYourNuGetCAndJavaDevelopment.pdf>
+*	[http://qconlondon.com/dl/qcon-london-2013/slides/BaruchSadogursky_ManagingModularSoftwareForYourNuGetCAndJavaDevelopment.pdf](http://qconlondon.com/dl/qcon-london-2013/slides/BaruchSadogursky_ManagingModularSoftwareForYourNuGetCAndJavaDevelopment.pdf)(:target="_blank")
 
 ### Сравнение хранилищ бинарных артефактов
-*	<http://docs.codehaus.org/display/MAVENUSER/Maven+Repository+Manager+Feature+Matrix>
+*	[http://docs.codehaus.org/display/MAVENUSER/Maven+Repository+Manager+Feature+Matrix](http://docs.codehaus.org/display/MAVENUSER/Maven+Repository+Manager+Feature+Matrix)(:target="_blank")

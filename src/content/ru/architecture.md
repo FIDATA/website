@@ -13,7 +13,7 @@ copyright: Copyright © 2014  Basil Peace
 Платформа будет иметь модульную архитектуру. Под модулем я понимаю
 набор исполняемых и вспомогательных файлов, доставляемых на компьютер
 пользователя. Для развёртывания модулей я планирую использовать
-[Qt Installer Framework](http://doc-snapshot.qt-project.org/qtifw-master/index.html).
+[Qt Installer Framework](http://doc-snapshot.qt-project.org/qtifw-master/index.html)(:target="_blank").
 С точки зрения разработчика модуль может включать как один, так и
 несколько артефактов.
 
@@ -235,5 +235,4 @@ Windows.
 	4.	Как будут вычисляться индикаторы в реальном времени?
 
 	Возможно, здесь нужен какой-то кэш или перераспределитель данных.
-См. как это сделано в kdb+:
-<http://kx.com/_papers/Kx_White_Paper-2013-131023.pdf>.
+См. как это сделано в [kdb+](http://kx.com/_papers/Kx_White_Paper-2013-131023.pdf)(:target="_blank").

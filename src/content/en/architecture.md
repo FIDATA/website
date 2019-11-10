@@ -13,7 +13,7 @@ Modularity
 Platform will have modular architecture. Under module I mean a
 collection of executable and auxiliary files deployed to user's
 computer. For deployment of modules I plan to use
-[Qt Installer Framework](http://doc-snapshot.qt-project.org/qtifw-master/index.html).
+[Qt Installer Framework](http://doc-snapshot.qt-project.org/qtifw-master/index.html)(:target="_blank").
 From developer's point of view module can include one or some artifacts.
 
 Platform will have embedded engine a-la OSGi. It will allow describe
@@ -230,5 +230,6 @@ testing at the same moment TS?
 	4.	How indicators will be computed in real time?
 
 	Probably we need here some cache or redistributor of data. See how
-it's done in kdb+:
-<http://kx.com/_papers/Kx_White_Paper-2013-131023.pdf>.
+it's done in [kdb+]
+(http://kx.com/_papers/Kx_White_Paper-2013-131023.pdf)
+(:target="_blank").
