@@ -42,3 +42,6 @@ gem 'guard-nanoc', '~> 2.1'
 # <>
 gem 'wdm', '~> 0.1', :platforms => [:mswin, :mingw, :x64_mingw, :mri] if RbConfig::CONFIG['host_os'] =~ /mswin|mingw|cygwin/i
 gem 'rb-kqueue', '~> 0.2' # if RbConfig::CONFIG['host_os'] =~ /bsd/i
+
+gem 'rubocop', '~> 0.50'
+gem 'rubocop-checkstyle_formatter', '~> 0.4'
